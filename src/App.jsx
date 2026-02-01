@@ -6,7 +6,7 @@ import PackagePage from './pages/PackagePage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
